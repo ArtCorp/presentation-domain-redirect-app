@@ -1,21 +1,30 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta property="og:site_name" content="AI Sales Technologies"/>
-        <title>HRMNY Sales</title>
-        <!-- Hotjar Tracking Code for Demo test -->
-<script type="text/javascript">
-  window._mfq = window._mfq || [];
-  (function() {
-    var mf = document.createElement("script");
-    mf.type = "text/javascript"; mf.defer = true;
-    mf.src = "//cdn.mouseflow.com/projects/93fbf55e-cf82-4615-929e-8008831b37ed.js";
-    document.getElementsByTagName("head")[0].appendChild(mf);
-  })();
-</script>
-    </head>
-    <body>
-        <h1>HELLO WORLD</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Защищенная страница</title>
+    <script>
+        function checkPassword() {
+            var password = prompt("Пожалуйста, введите пароль:");
+            if (password === "мойсекретныйпароль") {
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Неверный пароль!");
+                window.location.href = "index.html"; // Перенаправление на другую страницу
+            }
+        }
+        window.onload = checkPassword;
+    </script>
+    <style>
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Секретный контент</h1>
+        <p>Здесь находится скрытая информация.</p>
+    </div>
+</body>
 </html>
